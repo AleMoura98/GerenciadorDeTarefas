@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# 📌 Gerenciador de Tarefas em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um **Gerenciador de Tarefas** desenvolvido em **React**, com o objetivo de praticar conceitos fundamentais como componentização, gerenciamento de estado global com Context API, hooks e manipulação imutável de listas.  
+O usuário pode adicionar tarefas, marcá-las como concluídas e filtrá-las por status.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧰 Funcionalidades
 
-### `npm start`
+- **Adicionar novas tarefas** através de um campo de entrada e botão.
+- **Exibição de lista de tarefas** na tela.
+- **Marcar tarefas como concluídas** usando checkbox.
+- **Filtrar tarefas** por:
+  - Todas
+  - Concluídas
+  - Pendentes
+- **Gerenciamento de estado global** usando Context API + useReducer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🗂️ Estrutura do Projeto
 
-### `npm test`
+O projeto foi organizado com pastas e componentes separados, seguindo boas práticas de desenvolvimento com React:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+src/ │ App.js │ index.js │ index.css │ ├── context/ │      TarefasContext.js │ └── components/ FormAdicionar.js ListaDeTarefas.js Tarefa.js Filtro.js
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tecnologias Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React.js**
+- **JavaScript (ES6+)**
+- **Context API**
+- **Hooks** (`useState`, `useReducer`, `useContext`)
+- **CSS puro**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ▶️ Como Executar o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone este repositório:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Entre na pasta do projeto:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+cd seu-repositorio
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Instale as dependências:
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Execute o projeto:
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. Acesse no navegador:
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+📘 Conceitos Aplicados
+
+Estruturação de componentes em React
+
+Estados locais e globais
+
+Atualização de estado de forma imutável
+
+Uso de useReducer para controle de ações
+
+Context API para compartilhamento de estado
+
+Manipulação de eventos (onClick, onChange)
+
+Separação de responsabilidades entre componentes
+
+
+
+---
+
+🎯 Objetivo Acadêmico
+
+Este projeto foi desenvolvido como parte de uma atividade acadêmica na disciplina de Desenvolvimento Web/React, promovendo:
+
+Organização e modularização de código
+
+Entendimento prático dos hooks
+
+Gerenciamento de estado global
+
+Boas práticas no desenvolvimento em React
+
+
+
+---
+
+👤 Autor
+
+Alexandre Augusto Moura
+Projeto desenvolvido para fins educacionais.
+
+
+---
+
+📄 Licença
+
+Este projeto é de uso acadêmico e livre para estudo e aprimoramento.
+
+---
